@@ -13,8 +13,7 @@ html, body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: 100%; /* Prevent horizontal scrolling */
     color: #fff; /* Text color */
     scroll-behavior: smooth; /* Smooth scrolling */
 }
