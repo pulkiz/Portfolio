@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulkit Grover</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Placeholder where the navbar will load -->
+    <div id="navbar"></div>
+
+    <!-- Script to dynamically load the navbar -->
+    <script>
+      fetch("navbar.html")
+        .then((response) => {
+          if (!response.ok) throw new Error("Navbar fetch failed");
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Error loading navbar:", error);
+        });
+    </script>
+
+    <div class="page-container">
+      <!-- Header Section -->
+      <div id="header">
+        <div class="container">
+          <div class="header-text">
+            <p>Software Developer</p>
+            <p>Lassonde School of Engineering</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="row-education">
+        <!-- York University -->
+        <div class="item-row">
+          <div class="title-company-education">
+            <h1>Critical Thinking and Problem-Solving</h1>
+            <h3>Goal 1</h3>By September 15, 2025, I will take out 10 hours every week to complete the FCC(FreeCodeCamp) Web Development Course, track progress through their mini assignments and milestone tracker, get the completion certificate and implement it to complete and better my portfolio for my course COOP 2100 and for future use.<br></p>
+            <h3>Goal 2</h3> By December 2025, My second goal focuses on my role as an IT student technician. By July 2025, I will identify and address three recurring technical incidents (e.g., software crashes, system delays, or login failures), applying root cause analysis techniques and creating documentation for long-term solutions.<br>
+                  I will track incident frequency and aim to reduce recurrence by using my knowledge of networks, servers and shell that I learnt from Lassonde.</p>
+          </div>
+        </div>
+
+       <div class="row-education">
+        <!-- York University -->
+        <div class="item-row">
+          <div class="title-company-education">
+            <h1>Agility and Adaptability</h1>
+            <h3>Goal 1</h3>Over the next four months, I will improve my adaptability and productivity by refining my time management strategies. I will adopt the Time-Blocking Method, allocating focused blocks of time for coursework, work tasks, and study sessions. I will use Notion in combination with Google Calendar to visually organize and prioritize overlapping responsibilities. Success will be measured by meeting deadlines and figuring out my task completion rate. This will improve my adaptability to tools we use at the workplace, and also set a system up for me to not be overwhelmed by excess workloads.<br></p>
+            <h3>Goal 2</h3> Over the next year, I will improve my agility in learning by adopting a timed new-skill strategy, a method to increase my arsenal of tools I am fluent with to use in the workforce and for school. I will commit to learning and applying one new tool, platform, or framework every month (e.g., Docker, Excel VBA, REST APIs, New languages), dedicating at least two hours per week to hands-on experimentation and guided tutorials. This will help me grow my thinking, and not be surprised when seeing new technology that I would have otherwise been unprepared for.</p>
+          </div>
+        </div>
+
+        <!-- Vibgyor High -->
+       <div class="row-education">
+        <!-- York University -->
+        <div class="item-row">
+          <div class="title-company-education">
+            <h1>Collaboration and Leadership</h1>
+            <h3>Goal 1</h3>By the end of this year, I will improve my leadership and people management skills in my part-time job(Starbucks Supervisor) by implementing weekly 1-on-1 check-ins with at least two team members I work closely with. These check-ins (15 minutes each) will focus on understanding their challenges, aligning task priorities, and offering support. I will make sure everyone on my team continues to feel like they’re part of a family, where all of us are there for them through thick and thin. I will document action items and follow-ups in a shared Google Doc to track communication effectiveness and accountability.This gives me a strong understanding of people management in a fast paced workplace which is very helpful for my current career path.I aim to report improved team task coordination and satisfaction, measured through informal feedback and performance metrics. I will report this to my manager for feedback as well.<br></p>
+            <h3>Goal 2</h3> I will improve my collaboration skills in the context of computer science by organizing and participating in weekly peer coding sessions with at least one classmate, colleague or friend. These 1-hour sessions will focus on solving problems from LeetCode or past course assignments, where we will aim to finish 8-10 questions each week with an emphasis on pair programming, peer teaching, and code review. I will track this by using leetcode’s “ Top 150 Interview questions” Roadmap and aim to complete it by 15th of October, 2025.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footerMain" style="margin-top: 50px">
+        <p>
+          © Pulkit Grover |
+          <a href="mailto:pulkitgrover0911@gmail.com">Contact Me</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
