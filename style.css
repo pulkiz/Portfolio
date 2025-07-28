@@ -79,6 +79,7 @@ nav ul li a:hover::after {
 
 #header {
     flex: 1;
+
     
 }
 
@@ -278,7 +279,7 @@ footer a:hover, .footerMain a:hover {
 }
 
 
-.title-company h1, .title-company h3, .title-company h5, .title-company h6, .title-company h4 {
+.title-company h1, .title-company h3, .title-company h5, .title-company h6 {
     padding-bottom: 5px;
     font-family:  "Poppins", sans-serif;
     font-weight: 400;
@@ -304,13 +305,14 @@ footer a:hover, .footerMain a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    gap: 80px;
+    gap: 0px;
 }
 .title-company-education{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 100px;
     
 }
 .title-company-education h1, .title-company-education h3, .title-company-education h5 {
